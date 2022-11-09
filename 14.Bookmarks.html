@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+</head>
+<style>
+    .box   {
+        width: 200px;        /*  kutunun eni*/
+        height: 200px;          /*  kutunun boyu*/
+        text-align: center;     /*  yazı konumu*/
+        padding: 50px;  /*  kutunun ölcegi */
+    }
+    #box1 {
+        background:red;/* kutunun arkaplan rengi */
+    }
+    #box2 {
+        background:blue;
+    }
+    #box3 {
+        background:green;
+    }
+    #box4 {
+        background:peru;
+    }   
+    #box5 {
+        background:purple;
+    }
+
+</style>
+
+<body>
+    <ul>
+        <li><a href="#box1">Box1</a></li> <!-- a href #box1 ile 1. kutunun bulundugu kısma yonlendiriyoruz -->
+        <li><a href="#box2">Box2</a></li>
+        <li><a href="#box3">Box3</a></li>
+        <li><a href="#box4">Box4</a></li>
+        <li><a href="#box5">Box5</a></li>
+    </ul>
+    <div id="box1" class="box">BOX 1</div><!-- kutu içine yazı yazıp bulundugu kısma bir id veriyoruz class ise box classı-->
+    <div id="box2" class="box">BOX 2</div>
+    <div id="box3" class="box">BOX 3</div>
+    <div id="box4" class="box">BOX 4</div>
+    <div id="box5" class="box">BOX 5</div>
+    
+</body>
+</html>
