@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DENEME</title>
+    <style>
+      /* tablo için style verdik */
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- link -->
+    <a href="http://www.google.com" id="resimlinki">
+      <!-- resim ve resim uzerine link verme  -->
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ataturk1930s.jpg/220px-Ataturk1930s.jpg"
+        alt="MKA Resmi"
+        width="300"
+        height="400"
+      />
+    </a>
+    <br />
+    <!-- tablo -->
+    <table>
+      <thead>
+        <tr>
+          <th>İSİM</th>
+          <th>Departman</th>
+          <th>Maaş</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Oktsday</td>
+          <td>besdrk</td>
+          <td>50sd00</td>
+        </tr>
+        <tr>
+          <td>Oktssaay</td>
+          <td>bersdk</td>
+          <td>50sds00</td>
+        </tr>
+        <tr>
+          <td>Oktay</td>
+          <td>berk</td>
+          <td>5000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <!-- unordered list -->
+    <ul type="circle">
+      <li>birinci</li>
+      <ul>
+        <li>birincinin altı</li>
+        <li>birincinin altı 2</li>
+      </ul>
+      <li>ikinci</li>
+    </ul>
+    <br />
+    <!-- ordered list -->
+    <ol type="a">
+      <li>birinci</li>
+      <li>ikinsci</li>
+    </ol>
+    <!-- video -->
+
+    <video src="https://youtu.be/gqMtyXJrDfA" width="300px" controls autoplay>
+      Bu videoyu goremıyorsanız tarayıcınız desteklemiyor
+    </video>
+    <br />
+
+    <!--audio  -->
+    <audio src="https://youtu.be/gqMtyXJrDfA" controls autoplay>
+      goremıyorsanız tarayıcınız desteklemiyor
+    </audio>
+    <br />
+
+    <!-- blok level bulundugu blogun hepsini kaplıyor  -->
+    <!-- örnegin h1 blok level, h1 display ozellıgı:blok, h1 in display ozellıgını inline yaparsak inline a donusur -->
+    <!-- height ve width sadece blok level elemanlarad veriliyor -->
+    <br>
+    <!-- inline sadece kendi alanını kaplıyor  -->
+    <!-- ornegin a linki inline, sadece link kadar yer kaplıyor -->
+    <br>
+    <!-- Div Ve Span -->
+    <!--  div element blok level ve Span element inline level dır. -->
+    <div>bu bir div</div>
+    <span>bu bir span</span>
+    <!-- div navigation barlarda olusturulabilir. span ise bir kelimeyi işaretlerken kullanılabilir  -->
+  <br>
+
+    <!-- id id  bir defa verilir id verilirken kullanacagımzıifade#verilecek id tab yaparız,örnegin div#navbar -->
+    <div id="navbar"><asd/div>
+    <!-- class ise birden cok kez style vermek için verilebilri. Yazarken a.anınclassı >tab şeklinde yazabiliriz -->
+    <a href="#" class="sinifa">sınıf</a>
+     <a href="" class="class1 class2 class3">sınıflar</a>   <!--şeklinde birden fazla classı olabilir -->
+    <br>
+
+  <!-- sayfa içinden link verme !! bunun için a linkinin href kısmına gidicegimiz kısmın idsini gireriz. bunu butun ifadeler için yapabiliriz. Ornegin divlere gidebiliriz. Div containera veya div derslere gibi -->
+
+  <a href="#resimlinki">ATATURK RESMİNE GİDERr</a>  <!--  mesela burada ustteki resim linkine bir id verdim. Bu id yi anın hrefine atadım. Linke tıkladıgımda bu resmin oldugu kısıma gidecek -->
+<br>
+<br>
+  <!-- FORMLAR VE İNPUTLAR -->
+  
+  <form action="">   <!--action formdaki bilgileri istedigimiz yere gondermeye yarıyor   -->
+
+    <!-- İNPUTLAR -->
+    <label for="name">Name</label> <br>   <!--label yaparsak ver for u id olarak verirsek o iddeki inputa odaklanır tıklandıgında o inputa gider  -->
+    <input type="text" id="name" name="name"> <br>   <!-- type tezt ile yazı girdigimizi, name ile ise göndereceghimiz dosyada name="name" ile bulacagımzıı anlıyoruz  -->
+
+    
+    <label for="email">Email</label><br>
+    <input type="email" name="email" id="email" placeholder="emailinizi giriniz" ><br>   <!-- email formunda yaptıgımzıda email girmezsek hata alırız -->
+    <label for="password">Parola</label><br>
+    <input type="password" name="password" id="password"><br>
+    <label for="date">Tarih</label><br>
+    <input type="date" id="date" name="date"><br>
+    Cinsiyet <br>
+    male 
+    <input type="radio" name="gender" value="male" checked> <br> <!--  checked amacı israetli şejkilde gelmesi-->
+    female 
+    <input type="radio" name="gender" value="female"> <br>
+    other 
+    <input type="radio" name="gender" value="other"> <br>
+    <!-- radio typeda namelerin hepsi aynı olursa sadece bir tanesi seçilebilir. Eger name leri farklı verirsek birden cok secenek işaretleyebiliriz -->
+
+
+    <!-- Checkbox -->
+    Hobbies <br>
+    techonolgy
+    <input type="checkbox" name="tech" id="tech" checked><br>
+    music
+    <input type="checkbox" name="music" id="music"><br>
+    art
+    <input type="checkbox" name="art" id="art"> <br>
+
+    <!-- Select list -->
+    Degree <br>
+    <select name="degree" id="degree">
+      <option value="bachelor" selected>Lisans</option>
+      <option value="msc">Yukseklisans</option>
+      <option value="phd">Doktora</option>
+    </select>
+
+    <br>
+    <!-- text area -->
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Placeholdermesajı"></textarea>
+
+
+    <br>
+    <input type="submit" value="Gonder">   <!-- kayıt veya gonder butonu-->
+    <!-- Ayrıca submit butonunu button ile de verebilriiz: -->
+    
+    <button type="submit">Submit</button>
+    
+    <input type="reset" value="Sıfırla"> <br> <!-- girilen degerlerin sıfırlanmasını saglar, button ile de yapılabilir  -->
+    
+
+  </form>
+
+</body>
+
+
+    <!-- html sayfalarında semantic elemanlar vardır. Semantic elements den bakabiliriz -->
+    <body>
+      <!-- burada bod içerisinde semantic kullanırsak : -->
+
+      <header>
+        <h1>Yazılım bilimi</h1>
+        <nav>
+          <a href="#">home</a>
+          <a href="#">hcontact</a>
+          <a href="#">service</a>
+        </nav>
+      </header>
+      <section id="section-little">
+        <article>story1</article>
+        <article>story2</article>
+        <article>story2</article>
+      </section>
+      
+      <section id="section-big">
+        <article>story1</article>
+        <article>story2</article>
+        <article>story2</article>
+      </section>
+      
+      <aside>
+        <nav id="sidenav"></nav>
+      </aside>
+      <footer>
+        
+      </footer>
+
+
+    </body>
+</html>
